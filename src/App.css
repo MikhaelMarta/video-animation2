@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.video-container {
+  position:relative;
+}
+.video-container video {
+  vertical-align: middle;
+  max-width:100%;
+  object-fit: fill;
+  /*position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;*/
+  
+}
+.overlay-desc {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.animation {
+  animation: sampleanimation 5s forwards;
+}
+
+@keyframes sampleanimation {
+  0% {
+    left: 0px;
+    top: 600px;
+    opacity: 0;
+  }
+  1%{
+    
+      left: 0px;
+      top: 550px;
+      opacity: 1;
+   
+  }
+  99%{
+    
+    left: 0px;
+    top: 10px;
+    opacity: 1;
+ 
+}
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+  }
+/*  25% {
+    left: 0px;
+    top: 400px;
+    opacity: 1;
+  }
+  50% {
+    left: 0px;
+    top: 300px;
+    opacity: 1;
+  }
+  70% {
+    left: 0px;
+    top: 200px;
+    opacity: 1;
+  }
+  90% {
+    left: 0px;
+    top: 100px;
+    opacity: 1;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+  }*/
+}
+h1 {
+  color: white;
+  font-family: 'Nobile', sans-serif;
+  font-size: 9vw;
+  text-align: center;
+  
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
